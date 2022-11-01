@@ -10,15 +10,15 @@ flutter:
   plugin:
     platforms:
       android:
-        default_package: webview_flutter_android
+        default_package: webview_flutter_androido
       ios:
         default_package: webview_flutter_wkwebview
 
 dependencies:
   flutter:
     sdk: flutter
-  webview_flutter_android:
-    path: ../webview_flutter_android
+  webview_flutter_androido:
+    path: ../webview_flutter_androido
   webview_flutter_platform_interface: ^1.9.3
   webview_flutter_wkwebview: ^2.7.0
 
