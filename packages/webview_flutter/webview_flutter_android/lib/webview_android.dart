@@ -21,6 +21,7 @@ import 'webview_android_widget.dart';
 class AndroidWebView implements WebViewPlatform {
   @override
   Widget build({
+    print('[WEB VIEW ANDROID] building web view');
     required BuildContext context,
     required CreationParams creationParams,
     required WebViewPlatformCallbacksHandler webViewPlatformCallbacksHandler,
