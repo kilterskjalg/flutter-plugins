@@ -42,7 +42,9 @@ class AndroidWebView implements WebViewPlatform {
           // https://github.com/flutter/flutter/issues/24584 - the text selection
           // handles are not showing.
           // TODO(amirh): remove this when the issues above are fixed.
-          // onLongPress: () {},
+          onLongPress: () {
+            print('Wow that is a long press');
+          },
           excludeFromSemantics: true,
           child: AndroidView(
             viewType: 'plugins.flutter.io/webview',
