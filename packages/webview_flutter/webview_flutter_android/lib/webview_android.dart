@@ -21,7 +21,6 @@ import 'webview_android_widget.dart';
 class AndroidWebView implements WebViewPlatform {
   @override
   Widget build({
-    print('[WEB VIEW ANDROID] building web view');
     required BuildContext context,
     required CreationParams creationParams,
     required WebViewPlatformCallbacksHandler webViewPlatformCallbacksHandler,
@@ -29,6 +28,7 @@ class AndroidWebView implements WebViewPlatform {
     WebViewPlatformCreatedCallback? onWebViewPlatformCreated,
     Set<Factory<OneSequenceGestureRecognizer>>? gestureRecognizers,
   }) {
+    print('building web view');
     return WebViewAndroidWidget(
       useHybridComposition: false,
       creationParams: creationParams,
